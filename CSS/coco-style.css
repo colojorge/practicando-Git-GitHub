@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-htm{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
     font-size: 62.5%;
 }
 .enlace-boton {
     text-decoration: none;
+}
+.section-coco { 
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 600px;
 }
 .hr-coco {
     border: 3px solid #FF3333;
@@ -16,46 +27,43 @@ htm{
 .nav-coco {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    align-items: center;
     width: 1440px;
     height: 144px;
     background-color: #30343F;
 }
 /* imagen nav */
 .picture-nav-coco {
-    width: 372px;
-    /* height: 65.19; */
-    margin: 39px 0px 0px 110px;
+    margin-left: 110px;
+  
 }
 /* enlaces nav */
 .enlaces-nav-coco {
+    list-style: none;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    margin-right: 110px;
     width: 406px;
     height: 31px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    margin: 54px 110px 0px 0px;
 }
-.enlaces-nav-coco {
-    list-style: none;
-}
-.enlaces-nav-coco a {
+
+.enlaces-coco {
     text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23.48px;
+    font-family: 'Raleway', sans-serif;
     color: #FFFFFF;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 23.48px;
 }
 
 /* ESTILOS BANNER */
 .banner-section-coco {
     display: flex;
-    max-width: 100%;
     width: 1440px;
     height: 388px;
     margin-bottom: 50px;
-    background-image: url("./assets/img/funkos-banner.webp");
+    background-image: url("../img/funkos-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 77%;
@@ -74,7 +82,7 @@ htm{
     height: 45px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 3.8em;
     line-height: 44.61px ;
     margin: 0px;
 }
@@ -83,7 +91,7 @@ htm{
     height: 21px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8em;
     line-height: 21.13px;
     margin: 5px;
 }
@@ -97,7 +105,7 @@ htm{
     border-radius: 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2em;
     line-height: 24.2px;
     color: #111111;
     margin-top: 45px;
@@ -107,22 +115,14 @@ htm{
 .boton-banner-coco:hover {
     background-color: rgba(255, 255, 255, 0.407);
     color: white;
-    font-size: 22px;
+    font-size: 2.2em;
 }
 
 /* PRIMERA SECTION BLOQUE */
-.primer-section-coco { 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1220px;
-    height: 600px;
-    margin-left: 110px;
-}
-
 .primer-article-coco {
     width: 645px;
     height: 297px;
-    margin: auto;
+    margin-left: 110px;
 }
 
 .primer-article-coco h3 {
@@ -130,10 +130,9 @@ htm{
     height: 108px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 46px;
+    font-size: 4.6em;
     line-height: 54px;
     color: #111111;
-    margin: 0px;
 }
 
 .primer-article-coco P {
@@ -141,48 +140,38 @@ htm{
     height: 56px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4em;
     line-height: 28.18px;
     color: #4F4F4F;
-    margin: 0px;
 }
 
 /* SEGUNDA SECTION BLOQUE */
-.segundo-section-coco { 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    width: 1220px;
-    height: 600px;
-    margin-left: 110px;
-}
-
-.segundo-section-coco .segundo-article-coco {
+.segundo-article-coco {
     order: 2;
     width: 645px;
     height: 249px;
-    margin: auto;
-    /* background-color: azure; */
 }
 .segundo-article-coco h3 {
     width: 403px;
     height: 54px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 46px;
+    font-size: 4.6em;
     line-height: 54px;
     color: #111111;
-    margin: 0px;
 }
 .segundo-article-coco P {
     width: 458px;
     height: 56px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4em;
     line-height: 28.18px;
     color: #333333;
-    margin: 0px;
+}
+
+.picture-indigo-coco {
+    padding: 0px 63px 0px 110px;
 }
 
 /* BOTON SECTION BLOQUE */
@@ -194,15 +183,13 @@ htm{
     margin: 35px 0px 0px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 2.4em;
     line-height: 29.05px;
     color: #FFFFFF;
     transition: 1s all;
     cursor: pointer;
 }
-
 .boton-coleccion-coco:hover {
     background-color: #30343f9e;
-    font-size: 25px;
+    font-size: 2.5em;
 }
-
